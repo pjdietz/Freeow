@@ -11,7 +11,11 @@
 			
 			opts = {};
 			opts.classes = [$("#freeow-style").val()];
-			
+
+			if ($("#freeow-error").is(":checked")) {
+				opts.classes.push("error");
+			}
+						
 			if ($("#freeow-dontautohide").is(":checked")) {
 				opts.classes.push("pushpin");
 				opts.autoHide = false;

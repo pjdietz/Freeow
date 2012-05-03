@@ -1,7 +1,7 @@
 /*
 
 This stylesheet provides some sample styles to use with Freeow! You may use
-these in your project or create your own! If you plan to make your own!
+these in your project or create your own!
 
 For my samples, I'm assuming that you will call freeow() on a container with
 the class .freeow applied to it.
@@ -15,14 +15,12 @@ The default template function produces markup matching this outline:
 				p
 		span.icon
 		span.close
-		
-Don't forget: You can make your template function if this markup doesn't work
-for your project. The function must accept the title and message as arguments
-and return a DOM element (the message box). 
+
+Don't forget: You can make your own template function if this markup doesn't work for your project. The function must accept the title and message as arguments and return a DOM element (the message box).
 
 Update $.fn.freeow.defaults.template or pass the function as the template
 member of the options object when calling freeow().
-		
+
 */
 
 
@@ -32,15 +30,15 @@ member of the options object when calling freeow().
 .freeow {
     position: fixed;
     width: 300px;
-    z-index: 9999;  
+    z-index: 9999;
 }
 .freeow-top-right {
     top: 10px;
-    right: 10px; 
+    right: 10px;
 }
 .freeow-bottom-right {
     bottom: 10px;
-    right: 10px; 
+    right: 10px;
 }
 
 /* Message */
@@ -82,9 +80,12 @@ member of the options object when calling freeow().
     background: transparent url(images/close.png) no-repeat 0 0;
 }
 
-/* Icons */
+
+/* Icons -------------------------------------------------------------------- */
+
 .freeow .slide .icon   { background-image: url(images/slide.png); }
 .freeow .pushpin .icon { background-image: url(images/pushpin.png); }
+.freeow .error .icon   { background-image: url(images/error.png); }
 
 
 /* Specific Styles ---------------------------------------------------------- */
