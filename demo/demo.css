@@ -1,0 +1,68 @@
+#demo .fieldset {
+	float: left;
+	position: relative;
+	margin-top: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	padding: 10px;
+}
+
+#demo .fieldset .legend {
+	position: absolute;
+	display: block;
+	top: -.5em;
+	left: .5em;
+	padding: 0 5px;
+	background: #fff;
+	font-family: "Lucida Grande", Helvetica, arial, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+	color: #666;
+}
+
+#demo h3 {
+	margin: 0;
+	padding: 0;
+}
+
+#demo .clear {
+	clear: both;
+	height: 1px;
+}
+
+#demo .form-line {
+	clear: left;
+	float: left;
+	margin-top: 6px;
+}
+
+#demo .form-line label {
+	display: block;
+	float: left;
+	width: 100px;
+	font-family: "Lucida Grande", Helvetica, arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#demo .form-line input.text,
+#demo .form-line textarea {
+	width: 250px;
+}
+#demo .form-line textarea {
+	height: 32px;
+}
+
+#demo .form-line-check {
+	clear: left;
+	padding-left: 100px;
+	font-family: Helvetica, arial, sans-serif;
+	font-size: 12px;
+}
+
+#demo #freeow-show {
+	margin-top: 10px;
+	margin-left: 100px;
+}
