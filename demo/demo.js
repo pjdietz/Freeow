@@ -12,6 +12,10 @@
 			opts = {};
 			opts.classes = [$("#freeow-style").val()];
 
+			if ($("#freeow-append").is(":checked")) {
+				opts.prepend = false;
+			}
+			
 			if ($("#freeow-error").is(":checked")) {
 				opts.classes.push("error");
 			}

@@ -2,8 +2,9 @@
  * Freeow!
  * Stylish, Growl-like message boxes
  *
- * Copyright (c) 2011 PJ Dietz
- * Version: 1.0.1
+ * Copyright (c) 2012 PJ Dietz
+ * Version: 1.0.2
+ * Modified: 2012-05-03
  * Licensed under the MIT license:
  * http://www.opensource.org/licenses/mit-license.php
  *
@@ -57,7 +58,13 @@
     Freeow.prototype = {
 
         attach: function (container) {
-            $(container).prepend(this.element);
+
+            if (this.options.prepend) {
+                $(container).prepend(this.element);
+            } else {
+                $(container).append(this.element);
+            }
+
             this.show();
         },
 
@@ -147,6 +154,7 @@
             autoHide: true,
             autoHideDelay: 3000,
             classes: [],
+            prepend: true,
             startStyle: null,
             showStyle: {opacity: 1.0},
             showDuration: 250,
@@ -186,5 +194,3 @@
     } // if undefined
 
 }(jQuery));
-
-/*jslint white: true, browser: true, onevar: true, undef: true, nomen: true, eqeqeq: true, plusplus: true, bitwise: true, regexp: true, newcap: true, immed: true, strict: true */
